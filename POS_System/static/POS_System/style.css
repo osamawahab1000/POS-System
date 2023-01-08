@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #666666;
 }
 .logo {
     padding-left: 60px;
@@ -7,4 +7,10 @@ body{
 
 .border-b{
     border-bottom: 1px solid #0c0101;
+}
+
+.logo-img{
+    width: 175px;
+    height: 75px;
+    object-fit: contain;
 }

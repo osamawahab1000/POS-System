@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from .models import Product
 
 
 # Create your views here.
 def index(request):
-    return render(request, 'POS_System/index.html')
+    products = Product.objects.all()
+    dicto = {'products': products}
+    return render(request, 'POS_System/index.html', dicto)
