@@ -7,18 +7,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> POS SYSTEM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-{#    <link rel="stylesheet" type="text/css" href="{% static 'POS_System/style.css' %}">#}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/04702a4bf2.js" crossorigin="anonymous"></script>
+
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">#}
       <style>
           body{
-    background-color: #302f2f;
+    background-color: #111315;
 }
 .logo {
-    padding-left: 60px;
+    padding-left: 18px;
 }
 
 .border-b{
-    border-bottom: 1px solid #0c0101;
+    border-bottom: 1px solid #877e7e;
 }
 
 .logo-img{
@@ -31,14 +34,17 @@ form.d-flex {
     width: 270px;
 }
 
+
 .search {
-    margin-top: 19px;
-    margin-left: 170px;
+    margin-top: 20px;
+    margin-left: 150px;
 }
 
+
 input.form-control.me-2 {
-    opacity: 0.6;
+    opacity: 0.8;
 }
+
 
 .option{
     list-style: none;
@@ -68,11 +74,10 @@ a.link-option {
 }
 .card{
     border-radius: 10px;
-    margin: 20px 20px 20px 0;
     padding: 20px;
     color: white;
-    width: 175px;
-    height: 162px;
+    width: 190px;
+    height: 160px;
 }
 .bg-change1{
     background-color: #cfdddb;
@@ -109,10 +114,12 @@ a.link-option {
 
 .card-title {
     color: black;
+    margin-bottom: 0;
 }
 
 .card-text {
     color: #837b7b;
+    margin-bottom: 5px;
 }
 .card-img-top {
     width: 28px;
@@ -124,6 +131,93 @@ a.link-option {
     padding-left: 0;
     margin-top: 30px;
     padding-bottom: 0;
+}
+
+.edit-icon {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.waiter-name {
+    color: #94948f;
+}
+
+.table-number {
+    color: #cecaca;
+    text-decoration: none;
+    font-weight: 600;
+}
+.table-num {
+    margin-top: 10px;
+}
+
+.icon-size {
+    width: 45px;
+    margin-top: 9px;
+    margin-left: 35px;
+}
+
+.menu-body{
+    padding-top: 10px;
+    margin-top: 0;
+    padding-right: 0;
+}
+
+.bg-change {
+    background-color: #2d2d2d;
+    border-left: 5px solid #fac2d9;
+}
+
+.back-color{
+    background-color: #2d2d2d;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 2px;
+}
+.card-title-color{
+    color: #f3eeee;
+    font-weight: 300;
+    font-size: 16px;
+}
+.icons {
+    text-align: right;
+    margin-top: 15px;
+}
+.order-to-kitchen {
+    color: #a2a2a2;
+    font-size: 14px;
+}
+.card-text-menu{
+    color: #a2a2a2;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.color-bg-change{
+background: #292c2d;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 100%;
+    border-radius: 15px;
+}
+.row{
+    margin-right: 0;
+}
+.col-set{
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.dom_setting {
+    padding: 50px 20px 50px 20px;
+    text-align: center;
+    font-size: 90px;
+}
+
+.items-setting {
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 
@@ -147,27 +241,39 @@ a.link-option {
                 <div class="col-lg-6">
 {#                   Middle Side Search Bar#}
                     <div class="search">
-                    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      </form>
+                        <form class="form-inline d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
 
 
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
 {#                   Right Side Cart#}
                     <div class="table-num">
-                    bye
+                        <a href="" class="table-number">Table No. 1</a>
+                        <div class="waiter-name">
+                            khawar
                     </div>
                 </div>
+
             </div>
+                <div class="col-lg-1">
+{#                   Right Side Cart#}
+                    <a href="" class="edit-icon">
+                    <img src="{% static '/images/9.PNG' %}" class="icon-size"  alt="edit">
+                    </a>
+                </div>
+
         </div>
+    </div>
+
     </header>
 
 <div class="container-fluid">
 {#        Main Content#}
             <div class="row mt-2">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     {#       Left side options using unordered list#}
                    <ul class="option">
                        <li class="list-option">
@@ -183,11 +289,12 @@ a.link-option {
                            <a href="#" class="link-option">SETTING</a>
                        </li>
                    </ul>
+
                 </div>
-                <div class="col-lg-6">
-                    <div class="row">
+                <div class="col-lg-7">
+                    <div class="row mt-4">
                         {#       Middle side items for menu card in row 1#}
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change1">
                                 <img src="{% static 'images/1.png' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -196,7 +303,7 @@ a.link-option {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change2">
                                 <img src="{% static 'images/2.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -205,7 +312,7 @@ a.link-option {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change3">
                                 <img src="{% static 'images/3.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -214,7 +321,7 @@ a.link-option {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change4">
                                 <img src="{% static 'images/4.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -227,8 +334,8 @@ a.link-option {
 
 
                         {#       Middle side items for menu card in row 2#}
-                    <div class="row border-b pb-3 pt-2">
-                        <div class="col-lg-3">
+                    <div class="row border-b pb-3 mt-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change5">
                                 <img src="{% static 'images/5.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -237,7 +344,7 @@ a.link-option {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change6">
                                 <img src="{% static 'images/7.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -246,7 +353,7 @@ a.link-option {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change7">
                                 <img src="{% static 'images/8.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -255,7 +362,7 @@ a.link-option {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             <div class="card bg-change8">
                                 <img src="{% static 'images/6.PNG' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -270,46 +377,81 @@ a.link-option {
     {#       Middle side items for sub-menu card in row 1#}
                     <div class="row mt-4">
                         {#       Middle side items for menu card in row 1#}
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
+                            <div class="card bg-change">
+                                <div class="order-to-kitchen"> Orders -> Kitchen </div>
+                                <div class="card-body menu-body">
+                                    <h5 class="card-title card-title-color">Fish & Chips</h5>
+                                    <p class="card-text card-text-menu">$7.90</p>
+                                    <div class="icons">
+                                        <button class="btn btn-secondary back-color"><span class="fas fa-minus icon-color"></span></button>
+                                        0
+                                        <button class="btn btn-secondary back-color"><span class="fas fa-plus icon-color"></span></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
-                        <div class="col-lg-3">
-                            CARD
-                        </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
                     </div>
                         {#       Middle side items for sub-menu card in row 2#}
                     <div class="row pt-2">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-set">
                             CARD
                         </div>
                     </div>
 
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 color-bg-change">
                     {#       Right side order setting#}
-                    <div class="dom_setting">
-                    DOM Property will be used to get the value of the attribute
+                    <div class="row pt-2">
+                        <div class="col">
+                            <div class="dom_setting">
+                                <i class="fas fa-utensils fa-2xl"></i>
+                                <div class="items-setting">
+                                No items Added
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col">
+                            <div class="payment-icos">
+                                 <button class="btn btn-secondary back-color"><span class="fa-solid fa-square-dollar"></span></button>
+                                 <button class="btn btn-secondary back-color"><span class="fas fa-plus icon-color"></span></button>
+                                 <button class="btn btn-secondary back-color"><span class="fas fa-plus icon-color"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col">
+                            <button class="disabled place-order" type="button" >
+
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>

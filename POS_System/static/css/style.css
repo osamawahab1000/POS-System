@@ -1,0 +1,206 @@
+  body{
+    background-color: #111315;
+}
+.logo {
+    padding-left: 18px;
+}
+
+.border-b{
+    border-bottom: 1px solid #877e7e;
+}
+
+.logo-img{
+    width: 175px;
+    height: 75px;
+    object-fit: contain;
+}
+
+form.d-flex {
+    width: 270px;
+}
+
+
+.search {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+
+input.form-control.me-2 {
+    opacity: 0.8;
+}
+
+
+.option{
+    list-style: none;
+}
+
+.list-option{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+    margin-right: 170px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-radius: 8px;
+    width: 180px;
+}
+
+.list-option:hover{
+    background-color: #5a5858;;
+    color: #fff;
+    transition: 0.7s;
+}
+
+a.link-option {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.card{
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    width: 190px;
+    height: 160px;
+}
+.bg-change1{
+    background-color: #cfdddb;
+}
+.bg-change2{
+    background-color: #e4cdee;
+
+}
+
+.bg-change3{
+    background-color: #c2dbe9;
+}
+
+.bg-change4{
+    background-color: #c9caee;
+}
+
+.bg-change5{
+    background-color: #fac2d9;
+}
+
+.bg-change6{
+    background-color: #f0c8cf;
+}
+
+.bg-change7{
+    background-color: #c3e9de;
+}
+
+.bg-change8{
+    background-color: #e6dade;
+}
+
+
+.card-title {
+    color: black;
+    margin-bottom: 0;
+}
+
+.card-text {
+    color: #837b7b;
+    margin-bottom: 5px;
+}
+.card-img-top {
+    width: 28px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding-left: 0;
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+
+.edit-icon {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.waiter-name {
+    color: #94948f;
+}
+
+.table-number {
+    color: #cecaca;
+    text-decoration: none;
+    font-weight: 600;
+}
+.table-num {
+    margin-top: 10px;
+}
+
+.icon-size {
+    width: 45px;
+    margin-top: 9px;
+    margin-left: 35px;
+}
+
+.menu-body{
+    padding-top: 10px;
+    margin-top: 0;
+    padding-right: 0;
+}
+
+.bg-change {
+    background-color: #2d2d2d;
+    border-left: 5px solid #fac2d9;
+}
+
+.back-color{
+    background-color: #2d2d2d;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 2px;
+}
+.card-title-color{
+    color: #f3eeee;
+    font-weight: 300;
+    font-size: 16px;
+}
+.icons {
+    text-align: right;
+    margin-top: 15px;
+}
+.order-to-kitchen {
+    color: #a2a2a2;
+    font-size: 14px;
+}
+.card-text-menu{
+    color: #a2a2a2;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.color-bg-change{
+background: #292c2d;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 100%;
+    border-radius: 15px;
+}
+.row{
+    margin-right: 0;
+}
+.col-set{
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.dom_setting {
+    padding: 50px 20px 50px 20px;
+    text-align: center;
+    font-size: 90px;
+}
+
+.items-setting {
+    font-size: 30px;
+    margin-top: 30px;
+}
